@@ -1,8 +1,6 @@
 package Zoo;
 
 import File.FileGenerator;
-import Zoo.Habitat;
-import File.Archivo;
 //import Email.Email_Sender;
 import java.util.Scanner;
 
