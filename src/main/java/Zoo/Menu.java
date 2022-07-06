@@ -1,6 +1,9 @@
 package Zoo;
-
+/*
+* Despliega el menu para el ingreso del usuario al sistema
+* */
 import File.FileGenerator;
+import Habitat.Habitat;
 //import Email.Email_Sender;
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Zoo;
+package Habitat;
 
 public class Animals {
 
@@ -53,7 +53,7 @@ public class Animals {
 
     void mostrar( ) {
         System.out.println("Nombre: " + nombre );
-        System.out.println("Zoo.Habitat: " + habitat );
+        System.out.println("Habitat.Habitat: " + habitat );
         System.out.println("Descripcion: " + descripcion );
         //System.out.println("en Veterinaria : " + inVeterinarian );
     }
