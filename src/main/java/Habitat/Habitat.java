@@ -1,5 +1,5 @@
-package Zoo;
-
+package Habitat;
+//almacenar animales
 import java.util.*;
 
 public class Habitat extends Animals {
