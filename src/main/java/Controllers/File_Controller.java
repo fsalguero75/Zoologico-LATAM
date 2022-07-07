@@ -31,7 +31,7 @@ public class File_Controller {
         fw.write(str + System.lineSeparator());
       }
       bw.close();
-      System.out.println("File created successfully");
+      System.out.println("¡Archivo creado satisfactoriamente!");
       System.exit(0);
 
     } catch (Exception e) {
@@ -40,39 +40,13 @@ public class File_Controller {
     }
 
   }
-  public static String choseOptionFile(){
-    System.out.println("Digite el numero de la opcion deseada:\n1. PDF\n2. CVS\n3. TXT");
-    Scanner scan = new Scanner(System.in);
-    String option = scan.nextLine();
-    switch (option){
-      case "1":
-        option = "Asignar dirección para almacenar el archivo";
-        assign_route();
-        break;
-      case "2":
-        option = "Asignar formato del archivo";
-        assing_type_file();
-        break;
-      case "3":
-        option = "Crear archivo";
-        System.out.println("Aún no funciona");
-        break;
-      case "4":
-        option = "Asignar nombre del archivo";
-        assign_name();
-        break;
-      default:
-        System.out.println("Write an extension valid");;
-    }
-    return option;
-  }
   public static String assing_type_file(){
-    System.out.println("Digite el numero de la opcion deseada:\n1. PDF\n2. CVS\n3. TXT");
+    System.out.println("Digite el numero de la opcion deseada:\n1. WORD\n2. CVS\n3. TXT");
     Scanner scan = new Scanner(System.in);
     String extType = scan.nextLine();
     switch (extType){
       case "1":
-        extType = ".pdf";
+        extType = ".doc";
         break;
       case "2":
         extType = ".csv";
@@ -81,7 +55,7 @@ public class File_Controller {
         extType = ".txt";
         break;
       default:
-        System.out.println("Write an extension valid");;
+        System.out.println("Escriba una extension valida");;
     }
     return extType;
   }
@@ -89,7 +63,7 @@ public class File_Controller {
   public static String assign_route(){
     Boolean rutaExist = false;
     if (rutaExist != true){
-      System.out.println("\nWrite address to create file: \n");
+      System.out.println("\nEscriba una direccion para almacenar el archivo: \n");
       Scanner scanner = new Scanner(System.in);
       String rutaAddress = scanner.nextLine();
       return rutaAddress;
@@ -100,7 +74,7 @@ public class File_Controller {
   public static String assign_name(){
     Boolean nameExist = false;
     if (nameExist != true){
-      System.out.println("\nWrite name to file: \n");
+      System.out.println("\nEscriba el nombre del archivo: \n");
       Scanner scanner = new Scanner(System.in);
       String nameFile = scanner.nextLine();
       return nameFile;
