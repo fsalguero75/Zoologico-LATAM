@@ -1,4 +1,6 @@
----* Animales disponibles para visitar en el habitat de Aves *---Nombre: paloma
+---* Animales disponibles para visitar en el habitat de Aves *---
+
+Nombre: paloma
 Descripcion: descripcion paloma
 Nombre: Aguila
 Descripcion: descripcion aguila
