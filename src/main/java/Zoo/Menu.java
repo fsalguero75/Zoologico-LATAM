@@ -4,10 +4,8 @@ package Zoo;
  * */
 import Controllers.File_Controller;
 import Habitat.Habitat;
-
-import java.sql.Array;
 import java.util.Scanner;
-import java.util.function.Function;
+
 
 public class Menu {
 
@@ -39,8 +37,7 @@ public class Menu {
     }
   }
 
-  public static void menuAdmin(String nombre) {
-    Saludo(nombre);
+  public static void menuAdmin() {
     System.out.println("1.Lista de Habitats");
     System.out.println("\n2.Enviar correo");
     System.out.println("\n3.Agregar Animal");
@@ -48,7 +45,7 @@ public class Menu {
 
   public static void opcionesHabitats(String habitat, int opcion) {
 
-    File_Controller.CreateFile(Habitat.Lista(habitat), habitat);
+    //File_Controller.CreateFile(Habitat.(habitat), habitat);
   }
 
   public static void menuHabitats(int opcion) {
