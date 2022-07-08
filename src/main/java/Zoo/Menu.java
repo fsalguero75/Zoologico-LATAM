@@ -2,6 +2,7 @@ package Zoo;
 /*
 * Despliega el menu para el ingreso del usuario al sistema
 * */
+import Controllers.File_Controller;
 import File.FileGenerator;
 import Habitat.Habitat;
 //import Email.Email_Sender;
@@ -68,7 +69,7 @@ public class Menu {
                 break;
             case 2:
                 //metodo para imprimir lista
-                FileGenerator.CreateFile(Habitat.Lista(habitat),habitat);
+                File_Controller.CreateFile(Habitat.Lista(habitat),habitat);
                 menu_Principal();
                 break;
             case 3:
