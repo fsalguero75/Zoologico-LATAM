@@ -11,9 +11,10 @@ import java.util.Scanner;
 public class Admin {
 
   static void usuarioAdmin() {
+    System.out.println("\nPorfavor ingrese su nombre:");
     Scanner input = new Scanner(System.in);
     String nombreAdmin = input.nextLine();
     Menu.Saludo(nombreAdmin);
-    Menu.menuAdmin(nombreAdmin);
+    Menu.menuAdmin();
   }
 }
