@@ -1,6 +1,8 @@
 package Habitat;
 
-public class Animals {
+import Interfaces.Animal;
+
+public class Animals implements Animal {
 
     private String nombre;
     private String habitat;
@@ -50,13 +52,11 @@ public class Animals {
 
     }
 
-
     void mostrar( ) {
         System.out.println("Nombre: " + nombre );
         System.out.println("Habitat.Habitat: " + habitat );
         System.out.println("Descripcion: " + descripcion );
         //System.out.println("en Veterinaria : " + inVeterinarian );
     }
-
 
 }
