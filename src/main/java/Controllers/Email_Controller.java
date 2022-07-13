@@ -3,5 +3,4 @@ package Controllers;
 
 public class Email_Controller {
 
-
 }
