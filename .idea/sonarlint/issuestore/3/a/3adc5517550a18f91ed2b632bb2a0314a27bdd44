@@ -1,10 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.( à€
-W
-java:S1172"5Remove this unused method parameter "inVeterinarian".(È¡€Ìùÿÿÿÿ8¼†ÖÉŸ0
-9
-java:S11163"Remove this empty statement.(ùøæ®8Á†ÖÉŸ0
-Z	java:S106B"9Replace this use of System.out or System.err by a logger.(œ½ÏÃûÿÿÿÿ8Ã†ÖÉŸ0
-T	java:S106C"9Replace this use of System.out or System.err by a logger.(õİçH8Ã†ÖÉŸ0
-Z	java:S106D"9Replace this use of System.out or System.err by a logger.(éÇñ—ûÿÿÿÿ8Ä†ÖÉŸ0
-Z	java:S106E"9Replace this use of System.out or System.err by a logger.(¸İ¬‰şÿÿÿÿ8Å†ÖÉŸ0
