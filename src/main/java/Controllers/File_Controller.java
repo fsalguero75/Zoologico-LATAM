@@ -1,5 +1,7 @@
 package Controllers;
 
+import Interfaces.Archivo;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -10,16 +12,14 @@ import java.util.Scanner;
  * Usa la clase FileGenerator
  * Pide ubicacion de almacenamiento del archivo
  *  */
-public class File_Controller {
+public class File_Controller implements Archivo {
   public static void CreateFile(ArrayList list, String habitat) {
-
     try {
-      // File carpeta = archivo.getParentFile();
       String ruta =
-          File_Controller.assign_route()
-              + "\\"
-              + File_Controller.assign_name()
-              + File_Controller.assing_type_file(); // Ruta especifica para crear el archivo
+              File_Controller.assign_route()
+                      + "\\"
+                      + File_Controller.assign_name() // Nombre asignado por el usuario
+                      + File_Controller.assing_type_file(); // Ruta especifica para crear el archivo
       File file = new File(ruta);
 
       // Si el archivo no existe es creado
@@ -28,12 +28,12 @@ public class File_Controller {
       }
       FileWriter fw = new FileWriter(file);
       BufferedWriter bw = new BufferedWriter(fw);
-      fw.write("---* Animales disponibles para visitar en el habitat de " + habitat + " *---\n\n");
-      for (Object str : list) { // AQUI SE ESPECIFICA EL ARREGLO QUE SE VA A ESCRIBIR EN EL ARCHIVO
-        fw.write(str + System.lineSeparator());
+      fw.write("---* Animals available for visit in the habitat: " + habitat + " *---\n\n");
+      for (Object str : list) {
+        fw.write(str + System.lineSeparator()); // AQUI SE ESPECIFICA EL ARREGLO QUE SE VA A ESCRIBIR EN EL ARCHIVO
       }
       bw.close();
-      System.out.println("¡Archivo creado satisfactoriamente!");
+      System.out.println("File created successfully!");
       System.exit(0);
 
     } catch (Exception e) {
@@ -86,3 +86,4 @@ public class File_Controller {
     return null;
   }
 }
+

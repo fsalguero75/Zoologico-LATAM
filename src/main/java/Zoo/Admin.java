@@ -11,10 +11,17 @@ import java.util.Scanner;
 public class Admin {
 
   static void usuarioAdmin() {
-    System.out.println("\nPorfavor ingrese su nombre:");
+
+    //ingresar contraseña
     Scanner input = new Scanner(System.in);
-    String nombreAdmin = input.nextLine();
-    Menu.Saludo(nombreAdmin);
-    Menu.menuAdmin();
+    System.out.println("\nPor favor ingrese su clave de acceso");
+    int password = 123456;
+    int userpass = input.nextInt();
+    if(userpass == password){
+      Menu.opcionesAdmin();
+    }else{
+      System.out.println("Contraseña incorrecta");
+      Menu.menuInicio();
+    }
   }
 }

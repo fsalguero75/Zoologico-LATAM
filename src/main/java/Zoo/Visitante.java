@@ -11,10 +11,9 @@ import java.util.Scanner;
 public class Visitante {
 
   static void usuarioVisitante() {
-    System.out.println("\nPorfavor ingrese su nombre:");
-    Scanner input = new Scanner(System.in);
-    String nombreVisitante = input.nextLine();
-    Menu.Saludo(nombreVisitante);
-    Menu.menuVisitante();
+    System.out.println("Por favor indique a nuestro guia donde desea inicar su reccorido");
+    Menu.menuHabitats();
+    Menu.opcionesHabitats(Menu.opcionUsuario());
+
   }
 }
