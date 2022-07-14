@@ -44,7 +44,7 @@ public class Animals implements Animal {
         this.descripcion = descripcion;
     }
 
-    public Boolean getInfoVet() { return inVeterinarian; }
+    public Boolean tgetInfoVe() { return inVeterinarian; }
 
     public void setInfoVet(Boolean inVeterinarian){ this.inVeterinarian = inVeterinarian; }
 
