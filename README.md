@@ -1,3 +1,3 @@
 # Zoologico-LATAM
 
-Proyecto CSF para visualizar y manejar los datos de un zoologico desde la vista de un visitante hasta un administrador
+CSF Project to view and manage the data for a Zoo from the Admin and visitor perspective.
