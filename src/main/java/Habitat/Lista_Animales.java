@@ -6,8 +6,8 @@ package Habitat;
  * */
 public class Lista_Animales {
 
-  public static void mostrar_Lista(){
-    System.out.println("soy la lista :D");
+  public static void mostrar_Lista(String habitat){
+    Habitat.Lista(habitat);
   }
 
   public String getNombre() {

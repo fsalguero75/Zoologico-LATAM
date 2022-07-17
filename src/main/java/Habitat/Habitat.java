@@ -8,8 +8,8 @@ import lombok.Data;
 
 public class Habitat  extends Animals implements Animal {
 
-  public Habitat(String nombre, String habitat, String descripcion, boolean inVeterinarian, String StatusAnimal) {
-    super(nombre, habitat, descripcion, inVeterinarian, enums.StatusAnimal.valueOf(StatusAnimal));
+  public Habitat(String nombre, String habitat, String descripcion, String StatusAnimal) {
+    super(nombre, habitat, descripcion, enums.StatusAnimal.valueOf(StatusAnimal));
   }
 
   public static ArrayList<Animals> Lista(String habitat) {

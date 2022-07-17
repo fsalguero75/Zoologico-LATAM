@@ -10,12 +10,11 @@ public class Animals implements Animal {
 
   private Boolean inVeterinarian;
   private String statusAnimal;
-  public Animals(String nombre, String habitat, String descripcion, Boolean inVeterinarian,
+  public Animals(String nombre, String habitat, String descripcion,
                  StatusAnimal statusAnimal){
     this.nombre = nombre;
     this.habitat = habitat;
     this.descripcion = descripcion;
-    this.inVeterinarian = false;
     this.statusAnimal = String.valueOf(statusAnimal);
   }
   @Override
