@@ -1,6 +1,4 @@
 package Controllers;
-//Usar la Clase Email_Sender
+// Usar la Clase Email_Sender
 
-public class Email_Controller {
-
-}
+public class Email_Controller {}

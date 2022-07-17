@@ -2,6 +2,4 @@ package Zoo;
 
 import Interfaces.Persona;
 
-public class EmpleadoGuia implements Persona {
-
-}
+public class EmpleadoGuia implements Persona {}

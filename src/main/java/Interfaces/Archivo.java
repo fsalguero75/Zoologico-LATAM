@@ -2,16 +2,15 @@ package Interfaces;
 
 public interface Archivo {
 
-  static void CreateFile() {
+  static void CreateFile() {}
+
+  static String assign_route() {
+    return "";
   }
+  ;
 
-  static String assign_route(){
+  static String assing_type_file() {
     return "";
-  };
-
-
-  static String assing_type_file(){
-    return "";
-  };
-
+  }
+  ;
 }
