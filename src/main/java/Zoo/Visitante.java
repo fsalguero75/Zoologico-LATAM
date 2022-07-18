@@ -1,19 +1,18 @@
 package Zoo;
 
-import lombok.Data;
+import javax.mail.MessagingException;
 
-import java.util.Scanner;
 
 /*
- * Muestra los animales disponibles para ver
- *
- */
+Muestra los animales disponibles para ver
+*/
 public class Visitante {
 
-  static void usuarioVisitante() {
-    System.out.println("Por favor indique a nuestro guia donde desea inicar su reccorido");
+  static void usuarioVisitante() throws MessagingException {
+    String user = "Visitante";
+    System.out.println("Por favor indique a nuestros guias donde desea inicar su reccorido");
     Menu.menuHabitats();
-    Menu.opcionesHabitats(Menu.opcionUsuario());
+    Menu.opcionesHabitats(Menu.opcionUsuario(),user);
 
   }
 }

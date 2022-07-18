@@ -1,6 +1,8 @@
 package Zoo;
 
+import javax.mail.MessagingException;
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
 /*Usa las clases Controladores
  * Añade animales a la Lista de Animales
@@ -9,8 +11,8 @@ import java.util.Scanner;
  *
  * */
 public class Admin {
-
-  static void usuarioAdmin() {
+  private static Logger logger = Logger.getLogger(Menu.class);
+  static void usuarioAdmin() throws MessagingException {
 
     //ingresar contraseña
     Scanner input = new Scanner(System.in);
@@ -18,9 +20,12 @@ public class Admin {
     int password = 123456;
     int userpass = input.nextInt();
     if(userpass == password){
-      Menu.opcionesAdmin();
+      String user = "Admin";
+      Menu.menuHabitats();
+      Menu.opcionesHabitats(Menu.opcionUsuario(),user);
     }else{
       System.out.println("Contraseña incorrecta");
+      logger.error("The user has been selected a wrong option");
       Menu.menuInicio();
     }
   }

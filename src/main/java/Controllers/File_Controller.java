@@ -1,7 +1,5 @@
 package Controllers;
 
-import Interfaces.Archivo;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,9 +11,9 @@ import org.apache.log4j.Logger;
  * Usa la clase FileGenerator
  * Pide ubicacion de almacenamiento del archivo
  *  */
-public class File_Controller implements Archivo {
+public class File_Controller {
 
-  private static Logger logger = Logger.getLogger(File_Controller.class);
+  public static Logger logger = Logger.getLogger(File_Controller.class);
   public static void CreateFile(ArrayList list, String habitat) {
     try {
       String ruta =
@@ -37,11 +35,9 @@ public class File_Controller implements Archivo {
       }
       bw.close();
       logger.info("File created successfully!");
-      System.exit(0);
 
     } catch (Exception e) {
       logger.error(e);
-      System.exit(1);
     }
   }
 
