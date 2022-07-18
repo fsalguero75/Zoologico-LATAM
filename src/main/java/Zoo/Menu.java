@@ -3,6 +3,8 @@ package Zoo;
  * Despliega el menu para el ingreso del usuario al sistema
  * */
 
+import Habitat.Lista_Animales;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -18,10 +20,10 @@ public class Menu {
 
   public static void menuHabitats() {
     // Array con nombre de habitats
-    String listaHabitats[] = {"Aves", "Anfibios", "Mamiferos", "Peces", "Reptiles"};
-    for (int i = 0; i < listaHabitats.length; i++) {
-      System.out.println("\n" + (i + 1) + ".Visitar Habitat " + listaHabitats[i]);
-    }
+    String listaHabitats[] = {"Aves", "Peces", "Felinos", "Reptiles", "Mamiferos"};
+     for (int i = 0; i < listaHabitats.length; i++){
+       System.out.println( "\n" + (i + 1) + ".Visitar Habitat " + listaHabitats[i]);
+     }
   }
 
 
@@ -38,11 +40,12 @@ public class Menu {
     for(int i = 0; i < opcionesHabitats.length; i++){
       System.out.println("\n" + (i + 1) + "." + opcionesHabitats[i]);
     }
+    String habitats[] = {"Aves", "Peces", "Felinos", "Reptiles", "Mamiferos"};
     int opt = opcionUsuario();
     //Ejecuta segun opcion del usuario
    switch (opt){
      case 1:
-       System.out.println("Metodo que muestra lista de animales del habitat");
+       Lista_Animales.mostrar_Lista(habitats[opcion-1]);
        opcionesHabitats(opcion);
        break;
      case 2:
