@@ -24,7 +24,6 @@ class HabitatTest {
         listaTest.add(LocalData.gallina);
         listaTest.add(LocalData.canario);
         listaTest.forEach(System.out::println);
-
       assertEquals(listaTest,Habitat.Lista("Aves"));
     }
 }

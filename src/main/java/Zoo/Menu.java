@@ -3,6 +3,8 @@ package Zoo;
  * Despliega el menu para el ingreso del usuario al sistema
  * */
 
+import File.FileGenerator;
+import Habitat.Habitat;
 import Habitat.Lista_Animales;
 
 import java.util.Scanner;
@@ -49,7 +51,7 @@ public class Menu {
        opcionesHabitats(opcion);
        break;
      case 2:
-       System.out.println("Metodo que imprime lista de animales en archivo");
+       FileGenerator.CreateFile(Habitat.Lista(habitats[opcion-1]),habitats[opcion-1]);
        opcionesHabitats(opcion);
        break;
      case 3:
