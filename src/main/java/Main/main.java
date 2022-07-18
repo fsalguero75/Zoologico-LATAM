@@ -1,3 +1,5 @@
+package Main;
+
 import Zoo.Menu;
 import java.util.Scanner;
 
