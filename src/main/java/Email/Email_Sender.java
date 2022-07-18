@@ -1,6 +1,6 @@
 package Email;
 
-import Interfaces.Email;
+import java.util.ArrayList;
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -8,17 +8,16 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.swing.JOptionPane;
-
+import static Controllers.File_Controller.logger;
 
 
 public class Email_Sender implements Email{
 
-    public static void sendMail(String receptor) throws MessagingException {
+    public static void sendMail(String receptor, ArrayList list, String habitat) throws MessagingException {
         String correoDeOrigen = "pestanaxd99@gmail.com";
-        String correoDeDestino = "pestanaxd99@gmail.com";
-        String asunto = "Animales";
-        String mensajeDeTexto = "Estamos enviando las cosas que necesitamos :D";
+        String correoDeDestino = receptor;
+        String asunto = "Lista Animales en habitat " + habitat;
+        String mensajeDeTexto = ("Saludos, \n\nEsta es la lista de Animales que solicito del habitat " + habitat + "\n\n" + list);
         String contraseña16Digitos = "aquqzptgscjxyodh";
         try{
             Properties p = new Properties();
@@ -40,7 +39,7 @@ public class Email_Sender implements Email{
             transport.connect(correoDeOrigen,contraseña16Digitos);
             transport.sendMessage(mensaje, mensaje.getAllRecipients());
             transport.close();
-            JOptionPane.showMessageDialog(null,"Email has been sent! 1");
+            logger.info("Email sent successfully!");
             System.out.println("Email has been sent! 2");
         }catch ( MessagingException  e){
             System.out.println(e);
