@@ -7,12 +7,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
 /*
  * Usa la clase FileGenerator
  * Pide ubicacion de almacenamiento del archivo
  *  */
 public class File_Controller implements Archivo {
+
+  private static Logger logger = Logger.getLogger(File_Controller.class);
   public static void CreateFile(ArrayList list, String habitat) {
     try {
       String ruta =
@@ -33,11 +36,11 @@ public class File_Controller implements Archivo {
         fw.write(str + System.lineSeparator()); // AQUI SE ESPECIFICA EL ARREGLO QUE SE VA A ESCRIBIR EN EL ARCHIVO
       }
       bw.close();
-      System.out.println("File created successfully!");
+      logger.info("File created successfully!");
       System.exit(0);
 
     } catch (Exception e) {
-      e.printStackTrace();
+      logger.error(e);
       System.exit(1);
     }
   }
