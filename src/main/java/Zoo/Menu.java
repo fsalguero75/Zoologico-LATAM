@@ -20,12 +20,11 @@ public class Menu {
     int usertype = input.nextInt();
     //Metodo valida usuario
     Usuario.validateUser(usertype);
-    logger.error("The user has been selected a wrong option");
   }
 
   public static void menuHabitats() {
     // Array con nombre de habitats
-    logger.info("Display the list of contain habitats");
+    logger.info("Displayed list of contain habitats");
     String listaHabitats[] = {"Aves", "Peces", "Felinos", "Reptiles", "Mamiferos"};
      for (int i = 0; i < listaHabitats.length; i++){
        System.out.println( "\n" + (i + 1) + ".Visitar Habitat " + listaHabitats[i]);
@@ -98,10 +97,11 @@ public class Menu {
   }
 
   public static int opcionUsuario() {
-    logger.info("The user has been selected a User option");
+
     System.out.println("Digite el numero de la opcion deseada:");
     Scanner input = new Scanner(System.in);
     int opt = input.nextInt();
+    logger.info("User option selected");
     return opt;
   }
 

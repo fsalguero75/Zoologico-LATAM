@@ -11,7 +11,7 @@ import javax.mail.internet.MimeMessage;
 import static Controllers.File_Controller.logger;
 
 
-public class Email_Sender implements Email{
+public class Email_Sender {
 
     public static void sendMail(String receptor, ArrayList list, String habitat) throws MessagingException {
         String correoDeOrigen = "pestanaxd99@gmail.com";

@@ -4,35 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77abbbe0-ff7d-4b06-a147-f8ad57e25950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="77abbbe0-ff7d-4b06-a147-f8ad57e25950" name="Changes" comment="Mensajes de log, ajuste de Menu">
       <change beforePath="$PROJECT_DIR$/Logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/prueba.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Email_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Email_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/File_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/File_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Email/Email_Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Email/Email_Sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/File/FileGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/File/FileGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaces/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Habitat/Lista_Animales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Habitat/Lista_Animales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaces/Habitat.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zoo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zoo/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zoo/EmpleadoGuia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zoo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zoo/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zoo/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zoo/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zoo/Veterinario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Zoo/Visitante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zoo/Visitante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/File_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/File_Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Email/Email_Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Email/Email_Sender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/File/FileGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/File/FileGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Habitat/HabitatTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zoo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Zoo/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zoo/EmpleadoGuia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zoo/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Zoo/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zoo/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Zoo/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zoo/Veterinario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Zoo/Visitante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Zoo/Visitante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Habitat/HabitatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Habitat/HabitatTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "full.screen.before.presentation.mode": "true",
     "last_opened_file_path": "D:/Arialdiino's Stuff/programming stuff/Kodigo/JAVA/Zoologico-LATAM",
     "project.structure.last.edited": "Modules",
@@ -135,6 +115,14 @@
       <option name="presentableId" value="Default" />
       <updated>1658111594148</updated>
     </task>
+    <task id="LOCAL-00001" summary="Mensajes de log, ajuste de Menu">
+      <created>1658180079463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658180079463</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,5 +147,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Mensajes de log, ajuste de Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mensajes de log, ajuste de Menu" />
   </component>
 </project>

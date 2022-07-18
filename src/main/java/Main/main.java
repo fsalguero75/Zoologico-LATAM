@@ -3,7 +3,6 @@ package Main;
 import Zoo.Menu;
 
 import javax.mail.MessagingException;
-import java.util.Scanner;
 
 public class main extends Menu {
 

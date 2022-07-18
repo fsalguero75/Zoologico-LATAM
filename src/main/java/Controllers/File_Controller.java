@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
  * Usa la clase FileGenerator
  * Pide ubicacion de almacenamiento del archivo
  *  */
-public class File_Controller implements Archivo {
+public class File_Controller {
 
   public static Logger logger = Logger.getLogger(File_Controller.class);
   public static void CreateFile(ArrayList list, String habitat) {

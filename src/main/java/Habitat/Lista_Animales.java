@@ -10,7 +10,4 @@ public class Lista_Animales {
     Habitat.Lista(habitat);
   }
 
-  public String getNombre() {
-    return null;
-  }
 }
