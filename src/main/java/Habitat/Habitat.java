@@ -4,7 +4,6 @@ package Habitat;
 import Interfaces.Animal;
 import Data.LocalData;
 import java.util.*;
-import lombok.Data;
 
 public class Habitat  extends Animals implements Animal {
 
