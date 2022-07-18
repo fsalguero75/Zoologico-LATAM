@@ -3,34 +3,36 @@ package Zoo;
  * Despliega el menu para el ingreso del usuario al sistema
  * */
 
+import Controllers.File_Controller;
 import File.FileGenerator;
 import Habitat.Habitat;
 import Habitat.Lista_Animales;
 
 import java.util.Scanner;
+import org.apache.log4j.Logger;
 
 public class Menu {
-
-
+  private static Logger logger = Logger.getLogger(Menu.class);
   public static void menuInicio() {
     System.out.println("\nIndique como desea ingresar\nDigita el numero de la opcion:\n1.Admin\n2.Visitante");
     Scanner input = new Scanner(System.in);
     int usertype = input.nextInt();
     //Metodo valida usuario
     Usuario.validateUser(usertype);
+    logger.error("The user has been selected a wrong option");
   }
 
   public static void menuHabitats() {
     // Array con nombre de habitats
     String listaHabitats[] = {"Aves", "Peces", "Felinos", "Reptiles", "Mamiferos"};
+     logger.info("The user want display the list of contain habitats");
      for (int i = 0; i < listaHabitats.length; i++){
        System.out.println( "\n" + (i + 1) + ".Visitar Habitat " + listaHabitats[i]);
      }
   }
 
-
-
   public static void menuAdminOnly(){
+    logger.info("The user has been selected a Admin option");
     String opcionesAdmin[] = {"6. Enviar lista por correo", "7. Crear Habitat", "8. Agregar Animal"};
     for(int i = 0; i < opcionesAdmin.length; i++){
       System.out.println("\n" + opcionesAdmin[i]);
@@ -90,6 +92,7 @@ public class Menu {
   }
 
   public static int opcionUsuario() {
+    logger.info("The user has been selected a User option");
     System.out.println("Digite el numero de la opcion deseada:");
     Scanner input = new Scanner(System.in);
     int opt = input.nextInt();

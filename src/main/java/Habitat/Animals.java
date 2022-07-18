@@ -7,8 +7,6 @@ public class Animals implements Animal {
   private String nombre;
   private String habitat;
   private String descripcion;
-
-  private Boolean inVeterinarian;
   private String statusAnimal;
   public Animals(String nombre, String habitat, String descripcion,
                  StatusAnimal statusAnimal){
@@ -16,14 +14,6 @@ public class Animals implements Animal {
     this.habitat = habitat;
     this.descripcion = descripcion;
     this.statusAnimal = String.valueOf(statusAnimal);
-  }
-  @Override
-  public String getNombre(){
-    return nombre;
-  }
-
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
   }
 
   public String getHabitat(){
@@ -34,22 +24,6 @@ public class Animals implements Animal {
     this.habitat = habitat;
   }
 
-  public String getDescripcion(){
-    return descripcion;
-  }
-
-  public void setDescripcion(String descripcion) {
-    this.descripcion = descripcion;
-  }
-
-  public Boolean getInfoVet() { return inVeterinarian; }
-
-  public void setInfoVet(Boolean inVeterinarian){ this.inVeterinarian = inVeterinarian; }
-
-  public void setInfoStatusAnimal(String statusAnimal){ this.statusAnimal = statusAnimal; };
-
-  public String getInfoStatusAnimal() { return statusAnimal; }
-
   @Override
   public String toString() {
     return "Nombre: "
@@ -58,12 +32,5 @@ public class Animals implements Animal {
             + descripcion
             + "\nEl animal se encuentra en: "
             + statusAnimal;
-  }
-
-  void mostrar( ) {
-    System.out.println("Nombre: " + nombre );
-    System.out.println("Habitat.Habitat: " + habitat );
-    System.out.println("Descripcion: " + descripcion );
-    System.out.println("El animal está en: " + statusAnimal);
   }
 }

@@ -1,0 +1,37 @@
+2022-07-18 10:33:38 INFO  File_Controller:55 - User has been selected type doc = WORD
+2022-07-18 10:33:38 ERROR File_Controller:43 - java.io.IOException: El sistema no puede encontrar la ruta especificada
+2022-07-18 10:44:45 INFO  Menu:28 - The user want display the list of contain habitats
+2022-07-18 10:44:45 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 10:44:47 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 10:44:49 INFO  Habitat:50 - Has been displayed the list 'Felinos'
+2022-07-18 10:46:04 INFO  File_Controller:50 - User wants to create a file
+2022-07-18 10:46:06 INFO  File_Controller:57 - User has been selected type doc = WORD
+2022-07-18 10:46:06 INFO  File_Controller:31 - the system not detected a file, a new one was generated
+2022-07-18 10:46:06 INFO  File_Controller:40 - File created successfully!
+2022-07-18 10:46:06 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 10:48:31 INFO  Menu:28 - The user want display the list of contain habitats
+2022-07-18 10:48:31 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 10:48:33 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 10:48:35 INFO  Habitat:69 - Has been displayed the list 'Mamiferos'
+2022-07-18 10:48:41 INFO  File_Controller:81 - The user has been assigned this route to create the file: C:\Proyectos\kodigo\Zoologico-LATAM\Logs
+2022-07-18 10:48:44 INFO  File_Controller:50 - User wants to create a file
+2022-07-18 10:48:46 INFO  File_Controller:61 - User has been selected type doc = CSV
+2022-07-18 10:48:46 INFO  File_Controller:31 - the system not detected a file, a new one was generated
+2022-07-18 10:48:46 INFO  File_Controller:40 - File created successfully!
+2022-07-18 10:48:46 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 16:32:37 INFO  Menu:28 - The user want display the list of contain habitats
+2022-07-18 16:32:37 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 16:32:38 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 16:32:40 INFO  Habitat:50 - Has been displayed the list 'Felinos'
+2022-07-18 16:32:40 ERROR File_Controller:70 - java.io.IOException: El sistema no puede encontrar la ruta especificada
+2022-07-18 16:32:40 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 16:33:49 INFO  Menu:28 - The user want display the list of contain habitats
+2022-07-18 16:33:49 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 16:33:51 INFO  Menu:95 - The user has been selected a User option
+2022-07-18 16:33:52 INFO  Habitat:50 - Has been displayed the list 'Felinos'
+2022-07-18 16:34:15 INFO  File_Controller:81 - The user has been assigned this route to create the file: C:\Proyectos\kodigo\Zoologico-LATAM\Logs
+2022-07-18 16:34:21 INFO  File_Controller:50 - User wants to create a file
+2022-07-18 16:34:22 INFO  File_Controller:65 - User has been selected type doc = TXT
+2022-07-18 16:34:22 INFO  File_Controller:31 - the system not detected a file, a new one was generated
+2022-07-18 16:34:22 INFO  File_Controller:40 - File created successfully!
+2022-07-18 16:34:22 INFO  Menu:95 - The user has been selected a User option

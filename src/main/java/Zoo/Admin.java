@@ -9,7 +9,6 @@ import java.util.Scanner;
  *
  * */
 public class Admin {
-
   static void usuarioAdmin() {
 
     //ingresar contraseña

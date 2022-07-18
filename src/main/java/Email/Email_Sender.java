@@ -1,6 +1,5 @@
 package Email;
 
-import Interfaces.Email;
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -12,7 +11,7 @@ import javax.swing.JOptionPane;
 
 
 
-public class Email_Sender implements Email{
+public class Email_Sender {
 
     public static void sendMail(String receptor) throws MessagingException {
         String correoDeOrigen = "pestanaxd99@gmail.com";

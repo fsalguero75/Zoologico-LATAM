@@ -1,12 +1,14 @@
 package Habitat;
 // almacenar animales
 
+import Controllers.File_Controller;
 import Interfaces.Animal;
 import Data.LocalData;
 import java.util.*;
+import org.apache.log4j.Logger;
 
 public class Habitat  extends Animals implements Animal {
-
+  private static Logger logger = Logger.getLogger(Habitat.class);
   public Habitat(String nombre, String habitat, String descripcion, String StatusAnimal) {
     super(nombre, habitat, descripcion, enums.StatusAnimal.valueOf(StatusAnimal));
   }
@@ -25,6 +27,7 @@ public class Habitat  extends Animals implements Animal {
         list.add(LocalData.paloma);
         list.add(LocalData.gallina);
         list.add(LocalData.canario);
+        logger.info("Has been displayed the list 'Aves'");
         list.forEach(System.out::println);
         break;
       case "Peces":
@@ -35,6 +38,7 @@ public class Habitat  extends Animals implements Animal {
         list.add(LocalData.pez_espada);
         list.add(LocalData.pez_luna);
         list.add(LocalData.pez_cebra);
+        logger.info("Has been displayed the list 'Peces'");
         list.forEach(System.out::println);
         break;
       case "Felinos":
@@ -43,6 +47,7 @@ public class Habitat  extends Animals implements Animal {
         list.add(LocalData.tigre);
         list.add(LocalData.jaguar);
         list.add(LocalData.puma);
+        logger.info("Has been displayed the list 'Felinos'");
         list.forEach(System.out::println);
         break;
       case "Reptiles":
@@ -51,6 +56,7 @@ public class Habitat  extends Animals implements Animal {
         list.add(LocalData.caiman);
         list.add(LocalData.cocodrilo);
         list.add(LocalData.komodo);
+        logger.info("Has been displayed the list 'Reptiles'");
         list.forEach(System.out::println);
         break;
       case "Mamiferos":
@@ -60,10 +66,12 @@ public class Habitat  extends Animals implements Animal {
         list.add(LocalData.rinoceronte);
         list.add(LocalData.chimpance);
         list.add(LocalData.elefante);
+        logger.info("Has been displayed the list 'Mamiferos'");
         list.forEach(System.out::println);
         break;
       default:
-        System.out.println("Lista no existe");
+        logger.error("Has ");
+        System.out.println("The user tried to select a list that does not exist");
         break;
     }
     return list;

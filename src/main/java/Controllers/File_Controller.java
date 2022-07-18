@@ -1,7 +1,5 @@
 package Controllers;
 
-import Interfaces.Archivo;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,7 +11,7 @@ import org.apache.log4j.Logger;
  * Usa la clase FileGenerator
  * Pide ubicacion de almacenamiento del archivo
  *  */
-public class File_Controller implements Archivo {
+public class File_Controller{
 
   private static Logger logger = Logger.getLogger(File_Controller.class);
   public static void CreateFile(ArrayList list, String habitat) {
@@ -28,6 +26,7 @@ public class File_Controller implements Archivo {
       // Si el archivo no existe es creado
       if (!file.exists()) {
         file.createNewFile();
+        logger.info("the system not detected a file, a new one was generated");
       }
       FileWriter fw = new FileWriter(file);
       BufferedWriter bw = new BufferedWriter(fw);
@@ -37,30 +36,35 @@ public class File_Controller implements Archivo {
       }
       bw.close();
       logger.info("File created successfully!");
-      System.exit(0);
+      System.out.println("File created successfully!");
 
     } catch (Exception e) {
       logger.error(e);
-      System.exit(1);
+      System.out.println(e);
     }
   }
 
   public static String assing_type_file() {
+    logger.info("User wants to create a file");
     System.out.println("Digite el numero de la opcion deseada:\n1. WORD\n2. CVS\n3. TXT");
     Scanner scan = new Scanner(System.in);
     String extType = scan.nextLine();
     switch (extType) {
       case "1":
         extType = ".doc";
+        logger.info("User has been selected type doc = WORD");
         break;
       case "2":
         extType = ".csv";
+        logger.info("User has been selected type doc = CSV");
         break;
       case "3":
         extType = ".txt";
+        logger.info("User has been selected type doc = TXT");
         break;
       default:
         System.out.println("Escriba una extension valida");
+        logger.error("User has been selected not valid extension");
         ;
     }
     return extType;
@@ -72,6 +76,7 @@ public class File_Controller implements Archivo {
       System.out.println("\nEscriba una direccion para almacenar el archivo: \n");
       Scanner scanner = new Scanner(System.in);
       String rutaAddress = scanner.nextLine();
+      logger.info("The user has been assigned this route to create the file: "+ rutaAddress);
       return rutaAddress;
     } else {
       return null;
